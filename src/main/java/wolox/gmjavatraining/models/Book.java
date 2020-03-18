@@ -5,10 +5,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
+import javax.persistence.SequenceGenerator;
 import lombok.Data;
 
 @Entity
 @Data
+@SequenceGenerator(name="BookSequence")
 public class Book {
 
     @Id
